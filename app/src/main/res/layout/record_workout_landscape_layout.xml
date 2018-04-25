@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RecordWorkout"
+    android:weightSum="1">
+
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_weight=".1"
+        android:weightSum="1.5">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_weight=".25"
+            android:background="@drawable/custom_trb_border">
+
+            <TextView
+                android:id="@+id/workoutDetailsText"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".25"
+                android:text="Workout Details"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:weightSum="1.5"
+            android:layout_weight=".5"
+            android:background="@drawable/custom_trb_border">
+
+
+            <TextView
+                android:id="@+id/testTextView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".3"
+                android:text="AVG"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/minMileAvg"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".7"
+                android:text="0:00"
+                android:gravity="center"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/testTextView124"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:text="min/mile"
+                android:gravity="center"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:weightSum="1"
+            android:layout_weight=".8">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:weightSum="1.5"
+                android:layout_weight=".5"
+                android:background="@drawable/custom_trb_border">
+
+                <TextView
+                    android:id="@+id/testTextView123"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".3"
+                    android:text="  MAX"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:id="@+id/minMileMax"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".7"
+                    android:text="0:00"
+                    android:gravity="center"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/testTextView1224"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:text="min/mile"
+                    android:gravity="center"
+                    android:textSize="10dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:weightSum="1.5"
+                android:layout_weight=".5"
+                android:background="@drawable/custom_b_border">
+
+                <TextView
+                    android:id="@+id/testTextView1243"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".3"
+                    android:text="  MIN "
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:id="@+id/minMileMin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".7"
+                    android:text="0:00"
+                    android:gravity="center"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/testTextView12624"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:text="min/mile"
+                    android:gravity="center"
+                    android:textSize="10dp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:weightSum="1"
+        android:layout_weight=".9">
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/caloriesChart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"/>
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/stepsChart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"/>
+
+    </LinearLayout>
+</LinearLayout>
